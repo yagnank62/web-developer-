@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables & Custome Properties</title>
+    <style>
+
+        /* This is use for Create  gloable Custome variavles and properties */
+        /* :root{
+            --box-color:navy;
+        } */
+        .box{ 
+            /* (This is use for Create LOcal Custome variavles and properties )  */
+            --box-color: yellowgreen;            
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border:2px solid black;
+            margin: 32px 10px;
+        }
+        .container{
+            justify-content: center;
+            /* background-color: blanchedalmond; */
+            margin: auto;
+            /* padding: 100px; */
+            /* border: 2px solid black; */
+            width: 90%;
+            height: 382px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Variables & Custome Properties</h1>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

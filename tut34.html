@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow & Text Shadow</title>
+    <style>
+     *{
+         margin: 0;
+         padding: 0;
+     }
+     body{
+         border: 2px solid goldenrod;
+     }
+     h1{
+         text-align: center;
+         margin: 22px;
+     }   
+    .container{
+        display: flex;
+        /* width: 80%; */
+    }
+    .card{
+        padding: 43px 12px;
+        margin: 23px 12px;
+        border: 2px solid salmon;
+        background-color: bisque;
+        text-align: center;
+        box-shadow: 5px 5px 23px black;
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blure-radius color; */
+        /* box-shadow: offset-x offset-y blure-radius spread-raidus color; */
+        /* box-shadow: inset 3px 4px color;  are used for (Box shadow inside lav va mate)*/
+        /* box-shadow: inset 3px 4px grenn 3px 4px red;  are used for (multiple shadow lav va mate)*/
+    }
+    /* text shadow sem as a box shadow
+    .card h2{
+        text-shadow: 2px 2px red;
+    } */
+    .card:hover{
+        background-color: black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <h1>Box Shadow & Text Shadow</h1>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis fugiat at accusantium, in non sequi tenetur quod dolorum illo vel ducimus rerum amet adipisci facere sunt architecto cum nemo fuga doloremque rem saepe!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis fugiat at accusantium, in non sequi tenetur quod dolorum illo vel ducimus rerum amet adipisci facere sunt architecto cum nemo fuga doloremque rem saepe!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis fugiat at accusantium, in non sequi tenetur quod dolorum illo vel ducimus rerum amet adipisci facere sunt architecto cum nemo fuga doloremque rem saepe!</p>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transitions</title>
+<style>
+body{
+    background-color: black;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: deepskyblue;
+    width: 250px;
+    height: 250px;
+    color: #000;
+    /* transition-property: background-color;
+    transition-duration: 3s; */
+    transition: all 0.6s ease-in-out;
+}
+#box:hover{
+    background-color: deeppink;
+    width: 350px;
+    height: 350px;
+    color: #fff;
+    border-radius: 300px;
+    font-size: 35px;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>This Is Css Transitions</h1>
+        <div id="box">
+            <h2>It Is Box</h2>
+        </div>
+    </div>
+</body>
+</html>

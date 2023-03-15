@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		div
+		{
+			height: 200px;
+			width: 200px;
+			background: black;
+
+			/*animation-name: parth;
+			animation-duration: 2s;
+			animation-iteration-count: 3;*/
+
+			animation: parth 6s infinite;
+		}
+
+		@keyframes parth
+		{
+			/*from{background: black;}
+			to{background: red;}*/
+
+			0%{background: black;height: 200px;width: 200px;}
+			20%{background: red;height: 400px;width: 320px;transform: rotate(360deg);}
+			40%{background: green;height: 500px;width: 100px;}
+			60%{background: transparent;box-shadow: 0 0 30px blue;height: 500px;width: 500px;border-radius:50% ;}
+			80%{background: yellow;height: 20px;width: 800px;transform: translate(600px,0px);}
+			100%{background: black;height: 200px;width: 200px;}
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		
+	</div>
+
+</body>
+</html>

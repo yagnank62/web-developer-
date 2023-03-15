@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    
+    <title>Before And After Pseudeo Selecter</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Bree Serif', serif;
+            
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            content: "";
+            position: absolute;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        .nav{
+            font-size: 20px;
+            text-transform: uppercase;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 18px 50px;
+        }
+        section{
+            height: 480px;
+            justify-content: center;
+            /* border: 2px solid yellowgreen; */
+            font-size: 14px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        p{
+            text-align: center;
+        }
+        section::after{
+            content:  "This Is A content";
+        }
+        h3{
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3>Welcome To Codeing World</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error distinctio saepe porro ut facere mollitia dolorem quibusdam, quidem repellat minima tempore deleniti. Quidem quae nam magnam fugiat, aliquam commodi itaque vitae quia qui ex?
+        </section>
+        <!-- <hr> -->
+</body>
+</html>

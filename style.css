@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80px;
+    background-color: #333;
+}
+nav .logo{
+    width: 20%;
+    line-height: 80px;
+}
+nav .menu{
+    width: 80%;
+    line-height: 80px;
+}
+nav .logo h6{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    text-align: center;
+    color: rgb(107, 224, 235);
+}
+nav .menu i{
+    color: rgb(107, 224, 235);
+    padding: 0px 12px;
+    font-size: 22px;
+}
+nav .menu input{
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+    width: 65%;
+    padding:10px 8px 10px 8px;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    background-image: linear-gradient(lightblue,#333);
+}
+section .aside{
+    margin: 1px 2px;
+    width: 20%;
+    height: 650px;
+    background-color: #333;
+}
+section .main{
+    padding: 10px;
+    display: flex;
+    margin: 1px;
+    width: 78%;
+    background-color: #333;
+    height: 650px;
+}
+section .main .box{
+    margin: 2px auto;
+    width: 22%;
+    height: 130px;
+   background: rgb(107, 224, 235);
+}
+section .main .box i{
+    text-align: center;
+    display: inline-block;
+    line-height: 130px;
+    color: #333;
+}
+section .main .box h3{
+    text-align: center;
+    line-height: 130px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 35px;
+}

@@ -1,0 +1,18 @@
+div
+{
+	height: 200px;
+	background: lightblue;
+}
+
+.d1
+{
+	height: 50px;
+	background: black;
+}
+
+#d2
+{
+	height: 100px;
+	width: 50%;
+	background: blue;
+}
